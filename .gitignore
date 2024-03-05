@@ -5,8 +5,10 @@ advance-stratum-409704-8f6e8f9201b9.json
 # text to speech
 advance-stratum-409704-5126d296bfa8.json
 
-api-keys/
+api-keys/*
+!api-keys/.gitkeep
 
-output_folder/
+output_folder/*
+!output_folder/.gitkeep
 
 .env
