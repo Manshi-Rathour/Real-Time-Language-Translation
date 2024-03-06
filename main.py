@@ -20,7 +20,7 @@ def speech_to_text():
                 audio = recognizer.listen(source, timeout=None, phrase_time_limit=None)
 
                 try:
-                    # Perform the speech-to-text conversion
+                    # speech-to-text conversion
                     user_input_text = recognizer.recognize_google_cloud(audio, credentials_json='./api-keys/advance-stratum-409704-50ff1f2aa864.json')
                     print("User Input (English):", user_input_text)
 
@@ -80,7 +80,7 @@ def text_to_speech(text, language_code='hi-IN', voice_name='hi-IN-Wavenet-B', ou
         audio_config=audio_config
     )
 
-    # Create the output folder if it doesn't exist
+    # Create output folder if it doesn't exist
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
 
